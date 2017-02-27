@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tomato.Data.DataImport</id>
+    <version>1.0.0</version>
+    <title>Tomato.Data.DataImport</title>
+    <authors>SunnyCase</authors>
+    <owners>SunnyCase</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Json and js based dataImport</description>
+    <releaseNotes>Firstly released.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Data DataImport</tags>
+    <dependencies>
+      <group>
+        <dependency id="Tomato.Reflection" version="1.0.0" />
+        <dependency id="Tomato.Plugin" version="1.0.0" />
+        <dependency id="Tomato.Data.Validation" version="1.0.0" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" />
+      </group>
+    	<group targetFramework="net40">
+        <dependency id="NPOI" version="2.2.1" />
+        <dependency id="ClearScript.V8" version="5.4.7" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ComponentModel.DataAnnotations" targetFramework="net40"/>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\src\Tomato.Data.DataImport\bin\Release\net40\Tomato.Data.DataImport.dll" target="lib\net40" />
+  </files>
+</package>

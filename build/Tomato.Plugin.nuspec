@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tomato.Plugin</id>
+    <version>1.0.0</version>
+    <title>Tomato.Plugin</title>
+    <authors>SunnyCase</authors>
+    <owners>SunnyCase</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Plugin helpers</description>
+    <releaseNotes>Firstly released.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Plugin</tags>
+    <dependencies>
+    	<group targetFramework="netstandard1.4">
+        <dependency id="Microsoft.CSharp" version="4.3.0" />
+      	<dependency id="System.Reflection.TypeExtensions" version="4.3.0" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework="net40"/>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="..\src\Tomato.Plugin\bin\Release\net40\Tomato.Plugin.dll" target="lib\net40" />
+    <file src="..\src\Tomato.Plugin\bin\Release\netstandard1.4\Tomato.Plugin.dll" target="lib\netstandard1.4" />
+  </files>
+</package>
