@@ -2,21 +2,24 @@
 <package >
   <metadata>
     <id>Tomato.Reflection</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Tomato.Reflection</title>
     <authors>SunnyCase</authors>
     <owners>SunnyCase</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Reflection helpers</description>
-    <releaseNotes>Firstly released.</releaseNotes>
+    <releaseNotes>Update nuspec.</releaseNotes>
+    <projectUrl>https://github.com/sunnycase/Tomato.Data</projectUrl>
     <copyright>Copyright 2017</copyright>
     <tags>Reflection</tags>
     <dependencies>
     	<group targetFramework="netstandard1.4">
     		<dependency id="System.Reflection.Emit" version="4.3.0" />
-      		<dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" />
-      		<dependency id="System.Reflection.TypeExtensions" version="4.3.0" />
-      	</group>
+      	<dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" />
+      	<dependency id="System.Reflection.TypeExtensions" version="4.3.0" />
+      </group>
+      <group targetFramework="net40">
+      </group>
     </dependencies>
   </metadata>
   <files>

@@ -26,12 +26,24 @@ namespace Tomato.Data.DataImport.Providers
     /// </summary>
     public sealed class XlsDataSourceProvider<T> : DataSourceProviderBase<T> where T : class
     {
-        private readonly HSSFWorkbook workbook;
+        private readonly IWorkbook workbook;
 
+        private int _sheetIndex;
         /// <summary>
         /// 获取或设置要读取的表索引
         /// </summary>
-        public int SheetIndex { get; set; }
+        public int SheetIndex
+        {
+            get => _sheetIndex;
+            set
+            {
+                if(_sheetIndex != value)
+                {
+                    _sheetIndex = value;
+                    headers = null;
+                }
+            }
+        }
 
         private string[] sheetNames;
         /// <summary>
@@ -52,7 +64,7 @@ namespace Tomato.Data.DataImport.Providers
 
         public XlsDataSourceProvider(Stream stream)
         {
-            workbook = new HSSFWorkbook(stream);
+            workbook = WorkbookFactory.Create(stream);
         }
 
         public override IEnumerable<IRow<T>> ReadAll()

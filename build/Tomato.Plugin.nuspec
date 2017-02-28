@@ -2,19 +2,22 @@
 <package >
   <metadata>
     <id>Tomato.Plugin</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Tomato.Plugin</title>
     <authors>SunnyCase</authors>
     <owners>SunnyCase</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Plugin helpers</description>
-    <releaseNotes>Firstly released.</releaseNotes>
+    <releaseNotes>Update nuspec.</releaseNotes>
     <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/sunnycase/Tomato.Data</projectUrl>
     <tags>Plugin</tags>
     <dependencies>
-    	<group targetFramework="netstandard1.4">
-        <dependency id="Microsoft.CSharp" version="4.3.0" />
+      <group targetFramework="netstandard1.4">
+       	<dependency id="Microsoft.CSharp" version="4.3.0" />
       	<dependency id="System.Reflection.TypeExtensions" version="4.3.0" />
+      </group>
+      <group targetFramework="net40">
       </group>
     </dependencies>
     <frameworkAssemblies>

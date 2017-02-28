@@ -2,23 +2,22 @@
 <package >
   <metadata>
     <id>Tomato.Data.DataImport</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>Tomato.Data.DataImport</title>
     <authors>SunnyCase</authors>
     <owners>SunnyCase</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Json and js based dataImport</description>
-    <releaseNotes>Firstly released.</releaseNotes>
+    <releaseNotes>Support both xls and xlsx.</releaseNotes>
     <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/sunnycase/Tomato.Data</projectUrl>
     <tags>Data DataImport</tags>
     <dependencies>
-      <group>
+      <group targetFramework="net40">
         <dependency id="Tomato.Reflection" version="1.0.0" />
         <dependency id="Tomato.Plugin" version="1.0.0" />
         <dependency id="Tomato.Data.Validation" version="1.0.0" />
         <dependency id="Newtonsoft.Json" version="9.0.1" />
-      </group>
-    	<group targetFramework="net40">
         <dependency id="NPOI" version="2.2.1" />
         <dependency id="ClearScript.V8" version="5.4.7" />
       </group>
